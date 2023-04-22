@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvenOdd</title>
+
+    <!-- Bootstrap CSS & JavaSript-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font and Effects -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=3d"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1 class="font-effect-3d">EvenOdd</h1>
+      <p>
+        Every number is either <span class="even">Even</span> or
+        <span class="odd">Odd</span>
+      </p>
+    </div>
+
+    <div class="explanation">
+      <h2>What are Even Numbers?</h2>
+      <p>
+        Numbers that are completely divisible by 2 are termed as even numbers.
+        These numbers when divided by 2 leave 0 as the remainder. <br />Even
+        numbers are those numbers that can be divided into two equal groups or
+        pairs and are exactly divisible by 2. For example, 2, 4, 6, 8, 10, and
+        so on are even numbers. These numbers can be grouped in equal pairs.
+        However, this grouping cannot be done for numbers like 5, 7, 9, or 11.
+        So, 5, 7, 9, or 11 are not even numbers <br />
+        An even number is a number that is a multiple of 2. It can be said that
+        any number that is completely divisible by 2 is an even number.
+      </p>
+    </div>
+    <div class="explanation">
+      <h2>What are Odd Numbers?</h2>
+      <p>
+        A number which is not divisible by “2” is called an odd number. An odd
+        number always ends in 1, 3, 5, 7, or 9. An odd number is always 1 more
+        than (or 1 less than) an even number.Odd numbers are numbers which when
+        divided by 2 leave the remainder 1. In other words, we can say a number,
+        which is not divisible by 2, is an odd number.
+      </p>
+    </div>
+
+    <p>Write any number below to check if it is an Even or Odd Number</p>
+
+    <div class="jumbotron">
+      <form action="">
+        <div class="input">
+          <label for="number" class="form-label">Input a Number:</label>
+          <input
+            type="text"
+            name="inputbox"
+            value=""
+            id="number"
+            class="form-control"
+          />
+        </div>
+        <div id="btn">
+          <input
+            type="button"
+            name="button"
+            value="Click"
+            onClick="testResults()"
+            class="btn btn-lg"
+          />
+        </div>
+      </form>
+    </div>
+
+    <div class="result jumbotron">Your result will appear here!</div>
+
+    <p id="footer">© Copyright 2023 Obycodes</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
