@@ -64,6 +64,11 @@ h2{
         font-size: 4rem;
     }
     .result{
-        height: 10rem;
+        height: 15rem;
+    }
+}
+@media (max-width: 960px) {
+    h1{
+        font-size: 3.2rem;
     }
 }
